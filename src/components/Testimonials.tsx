@@ -50,7 +50,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <blockquote className="text-gray-600 mb-4">
-                <p>"{testimonial.comment}"</p>
+                <p>{testimonial.comment}</p>
               </blockquote>
               <div className="mt-4">
                 <p className="font-medium text-gray-900">{testimonial.name}</p>

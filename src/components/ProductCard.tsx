@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { StarIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 interface ProductCardProps {
   product: {
@@ -23,9 +24,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       className="group relative bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
     >
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
+          height={100}
+          width={100}
           className="h-full w-full object-cover object-center lg:h-full lg:w-full"
         />
       </div>
